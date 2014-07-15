@@ -1,0 +1,8 @@
+<h3 class="custom_left2"><%=l(:label_administration)%></h3>
+
+<div id="admin-index">
+  <%= render :partial => 'no_data' if @no_configuration_data %>
+  <div class="custom_left"> <%= render :partial => 'menu' %></div>
+</div>
+
+<% html_title(l(:label_administration)) -%>

@@ -1,0 +1,22 @@
+<%= javascript_tag do %>
+var operatorLabels = <%= raw_json Query.operators_labels %>;
+var operatorByType = <%= raw_json Query.operators_by_filter_type %>;
+var availableFilters = <%= raw_json query.available_filters_as_json %>;
+var labelDayPlural = <%= raw_json l(:label_day_plural) %>;
+var allProjects = <%= raw_json query.all_projects_values %>;
+$(document).ready(function(){
+  initFilters();
+  <% query.filters.each do |field, options| %>
+  addFilter("<%= field %>", <%= raw_json query.operator_for(field) %>, <%= raw_json query.values_for(field) %>);
+  <% end %>
+});
+<% end %>
+
+<div style="width:120% ">
+  <div><div id="filters-table" class="small-6 medium-8 large-8">
+  <div class="add-filter padding_right padding_top small-12 medium-4 large-4" style="float: right">
+<%= label_tag('add_filter_select', l(:label_filter_add)) %>
+<%= select_tag 'add_filter_select', filters_options_for_select(query), :name => nil %>
+  </div></div></div></div>
+<%= hidden_field_tag 'f[]', '' %>
+<% include_calendar_headers_tags %>

@@ -1,0 +1,36 @@
+<div class="query-columns">
+  </br>
+  <div class="row">
+  <div class="small-12 medium-6 large-6 columns">
+  <div style="padding-left:0" >
+      <%= label_tag "available_columns", l(:description_available_columns) %>
+      <br />
+      <%= select_tag 'available_columns',
+              options_for_select(query_available_inline_columns_options(query)),
+              :multiple => true, :size => 10, :style => "width:150px",
+              :ondblclick => "moveOptions(this.form.available_columns, this.form.selected_columns);" %>
+  </div>
+      <input type="button" value="&#8594;"
+       onclick="moveOptions(this.form.available_columns, this.form.selected_columns);" /><br />
+      <input type="button" value="&#8592;"
+       onclick="moveOptions(this.form.selected_columns, this.form.available_columns);" />
+  </div>
+  <div class="small-12 medium-6 large-6 columns">
+      <%= label_tag "selected_columns", l(:description_selected_columns) %>
+      <br />
+      <%= select_tag tag_name,
+              options_for_select(query_selected_inline_columns_options(query)),
+              :id => 'selected_columns', :multiple => true, :size => 10, :style => "width:150px",
+              :ondblclick => "moveOptions(this.form.selected_columns, this.form.available_columns);" %>
+  
+    <div class="buttons">
+      <input type="button" value="&#8648;" onclick="moveOptionTop(this.form.selected_columns);" /><br />
+      <input type="button" value="&#8593;" onclick="moveOptionUp(this.form.selected_columns);" /><br />
+      <input type="button" value="&#8595;" onclick="moveOptionDown(this.form.selected_columns);" /><br />
+      <input type="button" value="&#8650;" onclick="moveOptionBottom(this.form.selected_columns);" />
+    </div>
+  </div></div></div>
+
+<% content_for :header_tags do %>
+<%= javascript_include_tag 'select_list_move' %>
+<% end %>
