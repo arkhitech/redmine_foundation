@@ -1,0 +1,47 @@
+<% content_for :header_tags do %>
+    <%= auto_discovery_link_tag(:atom, {:action => 'index', :format => 'atom', :key => User.current.rss_key}) %>
+<% end %>
+<div class="contextual">
+  
+ 
+
+  <section class="top-bar-section2">
+    <!-- Right Nav Section -->
+    <ul class="right">
+  
+     
+    
+      <%= render_project_action_links %>
+      </ul>       
+       
+  </section>
+  
+      
+ 
+</div>
+<h3 class="custom_left2"><%= l(:label_project_plural) %></h3>
+
+<div id="projects-index" class="custom_left">
+<%= render_project_hierarchy(@projects) %>
+</div>
+
+<% if User.current.logged? %>
+<p style="text-align:right;">
+  <i class="fi-star"></i>
+  <span class= "padding_right"><%= l(:label_my_projects) %></span>
+</p>
+<% end %>
+
+<% other_formats_links do |f| %>
+  <%= f.link_to 'Atom', :url => {:key => User.current.rss_key}, :class => 'padding_right' %>
+<% end %>
+
+<% content_for :sidebar do %>
+  <%= form_tag({}, :method => :get) do %>
+<h3><%= l(:label_project_plural) %></h3>
+<label for="closed"><div class="lol"><%= check_box_tag 'closed', 1 ,params[:closed] %></div> <%= l(:label_show_closed_projects) %></label>
+    <p><%= submit_tag l(:button_apply), :class => 'button tiny round success', :name => nil %></p>
+  <% end %>
+<% end %>
+
+<% html_title(l(:label_project_plural)) -%>

@@ -1,0 +1,387 @@
+
+
+h1
+{    
+    font-size: 30px !important;
+    color: #ffffff !important;
+}
+.top-left {    
+    padding-left: 0 !important;
+    padding-right: 0 !important;    
+}
+.top-right {    
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    float:right !important;
+}
+.top-left ul {
+    font-size: 13px !important;
+}
+.top-right ul {
+    font-size: 13px !important;
+    float:right !important;
+}
+.custom_header{
+    padding-top: 15px;
+    padding-left: 8px;
+}
+
+.custom_bar{
+    padding-bottom: 5px !important;
+}
+.custom_left {
+    padding-left: 10px !important;
+    
+}
+
+
+
+
+.custom_left2{
+    padding-left: 7px !important;
+    padding-top: 15px !important;
+}
+
+#header {
+    background-color: #008CBA;
+    padding: 4px 8px 10px 6px;
+}
+
+#quick-search {
+    
+    padding-top: 5px;
+}
+
+#content {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 8px !important;
+}
+
+table tbody {
+    margin-right: 10px !important;
+}
+
+.values {
+    padding-right: 8px !important;
+    padding-top: 10px !important;
+}
+
+
+//.splitcontentleft {
+  //  padding-left: 8px !important;
+//}
+
+.box ul li {
+    list-style-type:square;
+    
+}
+.splitcontentleft {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.splitcontentright {
+  padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+}
+
+.padding_right{
+    padding-right: 10px !important;
+}
+
+
+.operator{
+    padding-top: 10px !important;
+    padding-right: 30px !important;
+    
+}
+
+.padding_top {
+    
+    padding-top: 5px !important;
+}
+.checkbox_padding {
+    padding-top: 10px !important}
+input {
+    margin: 0 !important;
+}
+
+#filters-table {
+    padding: 7px 0 0 7px !important;
+}
+
+table {
+    margin-bottom: 0 !important;
+    border:#ffffff !important;
+}
+fieldset#filters td.values select {
+    min-width: 65px !important;
+}
+
+select {
+    min-width: 65px !important;
+    padding-left: 10px !important;
+}
+
+#main{
+    background-color: white !important;
+}
+    .box {
+padding: 6px;
+margin-bottom: 10px;
+background-color: #f6f6f6;
+color: #505050;
+line-height: 1.5em;
+padding-left: 15px;
+padding-top: 12px;
+border: 1px solid #e4e4e4;
+}
+
+#loggedas {
+    color: white;
+    
+}
+#loggedas a {
+    color: white;
+}
+
+p {
+    font-size: 13px !important;
+}
+
+#footer {
+    
+    background-color: #f6f6f6;
+    color: black;
+}
+h2{
+    
+    padding-left: 7px !important;
+}
+
+#quick-search {
+    
+    margin-right: 7px !important;
+}
+
+.contextual{
+    
+    margin-right: 15px;
+}
+.mypage-box {
+    margin-right: 15px !important;
+}
+
+.add-filter {
+    padding-right: 100px !important;
+}
+
+.outer {
+    border: 1px solid #d9d9d9;
+    padding: 5px;
+}
+.top-bar-section2 {
+    background-color: white !important;
+}
+
+ul.projects div.root a.project {
+font-family: "Trebuchet MS", Verdana, sans-serif;
+font-weight: normal !important;
+font-size: 16px;
+margin: 0 0 10px 0;
+}
+
+
+.koka {
+    float:left !important;
+    list-style: square;
+    padding: 0 20px 0 0;
+}
+
+@media only screen and (max-width: 40em)
+{
+    
+    .outer{
+        border: none !important;
+    }
+    .collapsible {
+        border:none !important;
+    }
+    
+    h1
+{    
+    font-size: 18px !important;
+}
+
+}
+
+custom_width {
+    width: 45% !important;
+}
+
+#admin-menu a.users { background-image: url(../images/user.png); }
+#admin-menu a.users:before { content: "\f1c1"; 
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+#admin-menu a.groups { background-image: url(../images/group.png); }
+#admin-menu a.groups:before { content: "\f16e"; 
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+#admin-menu a.projects { background-image: url(../images/project.png); }
+#admin-menu a.projects:before { content: "\f1a1"; 
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+#admin-menu a.trackers { background-image: url(../images/group.png); }
+#admin-menu a.trackers:before { content: "\f12e"; 
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+#admin-menu a.issue_statuses { background-image: url(../images/group.png); }
+#admin-menu a.issue_statuses:before { content: "\f1ce"; 
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+#admin-menu a.roles { background-image: url(../images/group.png); }
+#admin-menu a.roles:before { content: "\f1f6"; 
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+
+#admin-menu a.custom_fields { background-image: url(../images/group.png); }
+#admin-menu a.custom_fields:before { content: "\f106"; 
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+#admin-menu a.enumerations { background-image: url(../images/group.png); }
+#admin-menu a.enumerations:before { content: "\f104"; 
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+#admin-menu a.plugins { background-image: url(../images/group.png); }
+#admin-menu a.plugins:before { content: "\f19d"; 
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+#admin-menu a.settings { background-image: url(../images/group.png); }
+#admin-menu a.settings:before { content: "\f160"; 
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+#admin-menu a.info { background-image: url(../images/group.png); }
+#admin-menu a.info:before { content: "\f1fa"; 
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+#admin-menu a.server_authentication { background-image: url(../images/group.png); }
+#admin-menu a.server_authentication:before { content: "\f192"; 
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+#admin-menu a.workflows { background-image: url(../images/group.png); }
+#admin-menu a.workflows:before { content: "\f13e"; 
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
