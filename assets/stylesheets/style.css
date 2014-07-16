@@ -221,7 +221,7 @@ custom_width {
     width: 45% !important;
 }
 
-#admin-menu a.users { background-image: url(../images/user.png); }
+#admin-menu a.users { background-image: none; }
 #admin-menu a.users:before { content: "\f1c1"; 
   font-family: "foundation-icons";
   font-style: normal;
@@ -233,7 +233,7 @@ custom_width {
   display: inline-block;
   text-decoration: inherit;
 }
-#admin-menu a.groups { background-image: url(../images/group.png); }
+#admin-menu a.groups { background-image: none; }
 #admin-menu a.groups:before { content: "\f16e"; 
   font-family: "foundation-icons";
   font-style: normal;
@@ -245,7 +245,7 @@ custom_width {
   display: inline-block;
   text-decoration: inherit;
 }
-#admin-menu a.projects { background-image: url(../images/project.png); }
+#admin-menu a.projects { background-image: none; }
 #admin-menu a.projects:before { content: "\f1a1"; 
   font-family: "foundation-icons";
   font-style: normal;
@@ -257,7 +257,7 @@ custom_width {
   display: inline-block;
   text-decoration: inherit;
 }
-#admin-menu a.trackers { background-image: url(../images/group.png); }
+#admin-menu a.trackers { background-image: none; }
 #admin-menu a.trackers:before { content: "\f12e"; 
   font-family: "foundation-icons";
   font-style: normal;
@@ -270,7 +270,7 @@ custom_width {
   text-decoration: inherit;
 }
 
-#admin-menu a.issue_statuses { background-image: url(../images/group.png); }
+#admin-menu a.issue_statuses { background-image: none; }
 #admin-menu a.issue_statuses:before { content: "\f1ce"; 
   font-family: "foundation-icons";
   font-style: normal;
@@ -283,7 +283,7 @@ custom_width {
   text-decoration: inherit;
 }
 
-#admin-menu a.roles { background-image: url(../images/group.png); }
+#admin-menu a.roles { background-image: none; }
 #admin-menu a.roles:before { content: "\f1f6"; 
   font-family: "foundation-icons";
   font-style: normal;
@@ -297,7 +297,7 @@ custom_width {
 }
 
 
-#admin-menu a.custom_fields { background-image: url(../images/group.png); }
+#admin-menu a.custom_fields { background-image: none; }
 #admin-menu a.custom_fields:before { content: "\f106"; 
   font-family: "foundation-icons";
   font-style: normal;
@@ -310,7 +310,7 @@ custom_width {
   text-decoration: inherit;
 }
 
-#admin-menu a.enumerations { background-image: url(../images/group.png); }
+#admin-menu a.enumerations { background-image: none; }
 #admin-menu a.enumerations:before { content: "\f104"; 
   font-family: "foundation-icons";
   font-style: normal;
@@ -322,7 +322,7 @@ custom_width {
   display: inline-block;
   text-decoration: inherit;
 }
-#admin-menu a.plugins { background-image: url(../images/group.png); }
+#admin-menu a.plugins { background-image: none; }
 #admin-menu a.plugins:before { content: "\f19d"; 
   font-family: "foundation-icons";
   font-style: normal;
@@ -335,7 +335,7 @@ custom_width {
   text-decoration: inherit;
 }
 
-#admin-menu a.settings { background-image: url(../images/group.png); }
+#admin-menu a.settings { background-image: none; }
 #admin-menu a.settings:before { content: "\f160"; 
   font-family: "foundation-icons";
   font-style: normal;
@@ -348,7 +348,7 @@ custom_width {
   text-decoration: inherit;
 }
 
-#admin-menu a.info { background-image: url(../images/group.png); }
+#admin-menu a.info { background-image: none; }
 #admin-menu a.info:before { content: "\f1fa"; 
   font-family: "foundation-icons";
   font-style: normal;
@@ -360,7 +360,7 @@ custom_width {
   display: inline-block;
   text-decoration: inherit;
 }
-#admin-menu a.server_authentication { background-image: url(../images/group.png); }
+#admin-menu a.server_authentication { background-image: none; }
 #admin-menu a.server_authentication:before { content: "\f192"; 
   font-family: "foundation-icons";
   font-style: normal;
@@ -373,7 +373,7 @@ custom_width {
   text-decoration: inherit;
 }
 
-#admin-menu a.workflows { background-image: url(../images/group.png); }
+#admin-menu a.workflows { background-image: none; }
 #admin-menu a.workflows:before { content: "\f13e"; 
   font-family: "foundation-icons";
   font-style: normal;

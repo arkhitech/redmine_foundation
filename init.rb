@@ -1,7 +1,5 @@
 require 'redmine'
-require 'bootstrap_hooks'
-require 'application_helper_patch'
-require 'settings_helper_patch'
+require 'foundation_hooks'
 
 Redmine::Plugin.register :redmine_foundation_theme do
   name 'Foundation Theme plugin'
