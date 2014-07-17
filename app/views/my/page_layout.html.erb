@@ -5,7 +5,8 @@
  <%= select_tag 'block',
                  content_tag('option') + options_for_select(@block_options),
                  :id => "block-select" %>
-  <div class="custom_width custom_left"> <%= link_to l(:button_add), '#', :onclick => '$("#block-form").submit()', :class => 'icon icon-add' %>
+  <div class="custom_width custom_left">
+<%= link_to l(:button_add), '#', :onclick => '$("#block-form").submit()', :class => 'icon icon-add' %>
   <% end %>
 <% end %>
 <%= link_to l(:button_back), {:action => 'page'}, :class => 'icon icon-cancel' %>
