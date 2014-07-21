@@ -4517,9 +4517,6 @@ textarea {
   textarea.radius {
     border-radius: 3px; }
 
-input[type="submit"] {
-  -webkit-appearance: none; }
-
 /* Respect enforced amount of rows for textarea */
 textarea[rows] {
   height: auto; }
