@@ -23,9 +23,23 @@ h1
 }
 .custom_header{
     padding-top: 15px;
+    padding-bottom: 15px !important;
     padding-left: 8px;
 }
 
+.custom_font{
+    font: normal !important;
+}
+#main-menu li a{
+    
+    
+    font-weight: normal !important;
+}
+
+#main-menu li a.selected{
+    background: #004888 !important;
+    color: white !important;
+}
 .custom_bar{
     padding-bottom: 5px !important;
 }

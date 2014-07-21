@@ -10,7 +10,7 @@
     <ul class="right">
   
      
-    <%=  content_tag('i', '', :class => 'fi-folder-add') %>
+    <%=  content_tag('i', '', :class => 'fi-folder-add') if User.current.allowed_to?(:add_project, nil, :global => true) %>
       <%= render_project_action_links %>
       </ul>       
        

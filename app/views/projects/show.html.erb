@@ -1,6 +1,6 @@
 <div class="contextual">
   <% if User.current.allowed_to?(:add_subprojects, @project) %>
-    <%= link_to l(:label_subproject_new), new_project_path(:parent_id => @project), :class => 'icon icon-add' %>
+  <i class="fi-folder-add"></i> <%= link_to l(:label_subproject_new), new_project_path(:parent_id => @project)%>
   <% end %>
   <% if User.current.allowed_to?(:close_project, @project) %>
     <% if @project.active? %>
@@ -11,7 +11,7 @@
   <% end %>
 </div>
 
-<h3><%=l(:label_overview)%></h3>
+<h3 class="custom_left2"><%=l(:label_overview)%></h3>
 
 <% unless @project.active? %>
   <p class="warning"><span class="icon icon-lock"><%= l(:text_project_closed) %></span></p>
@@ -19,7 +19,7 @@
 
 <div class="splitcontentleft">
   <% if @project.description.present? %>
-  <div class="wiki">
+  <div class="wiki custom_left">
     <%= textilizable @project.description %>
   </div>
   <% end %>
@@ -78,7 +78,7 @@
 
 <% content_for :sidebar do %>
     <% if @total_hours.present? %>
-    <h3><%= l(:label_spent_time) %></h3>
+  <h3><%= l(:label_spent_time) %></h3>
     <p><span class="icon icon-time"><%= l_hours(@total_hours) %></span></p>
     <p>
     <% if User.current.allowed_to?(:log_time, @project) %>

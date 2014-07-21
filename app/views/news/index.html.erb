@@ -7,7 +7,7 @@
 </div>
 
 <div id="add-news" style="display:none;">
-<h2><%=l(:label_news_new)%></h2>
+<h3 class="custom_left2"><%=l(:label_news_new)%></h3>
 <%= labelled_form_for @news, :url => project_news_index_path(@project),
                                            :html => { :id => 'news-form', :multipart => true } do |f| %>
 <%= render :partial => 'news/form', :locals => { :f => f } %>
